@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --warm-bg: #fcf8fb;
+        --warm-dark: #1b0d18;
+        --warm-accent: #d843a8;--warm-subtle: #f3e7f0;
+        --warm-muted: #9a4c86;
+      }
+      body {
+        font-family: 'Plus Jakarta Sans', 'Noto Sans', sans-serif;
+      }
+      .progress-indicator {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+      .progress-step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 1;
+        position: relative;
+      }
+      .progress-step::after {
+        content: '';
+        position: absolute;
+        top: 16px;left: 50%;
+        width: 100%;
+        height: 2px;
+        background-color: var(--warm-subtle);
+        z-index: 1;
+      }
+      .progress-step:last-child::after {
+        display: none;
+      }
+      .step-circle {
+        width: 32px;
+        height: 32px;
+        border-radius: 9999px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        z-index: 2;
+        transition: all 0.3s ease;
+      }
+      .step-active .step-circle {
+        background-color: var(--warm-accent);
+        color: white;
+        border: 2px solid var(--warm-accent);
+      }
+      .step-inactive .step-circle {
+        background-color: var(--warm-bg);
+        color: var(--warm-muted);
+        border: 2px solid var(--warm-subtle);
+      }
+      .step-complete .step-circle {
+        background-color: var(--warm-accent);
+        color: white;
+        border: 2px solid var(--warm-accent);
+      }
+      .step-complete::after {
+        background-color: var(--warm-accent);
+      }
+      .step-label {
+        margin-top: 0.5rem;
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: var(--warm-dark);
+        z-index: 2;
+        background-color: var(--warm-bg);
+        padding: 0 0.5rem;
+      }
+    </style>
+</head>
+<body class="bg-[var(--warm-bg)] text-[var(--warm-dark)]">
+<div class="relative flex size-full min-h-screen flex-col" style="--select-button-svg: url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724px%27 height=%2724px%27 fill=%27rgb(154,76,134)%27 viewBox=%270 0 256 256%27%3e%3cpath d=%27M181.66,170.34a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-48-48a8,8,0,0,1,11.32-11.32L128,212.69l42.34-42.35A8,8,0,0,1,181.66,170.34Zm-96-84.68L128,43.31l42.34,42.35a8,8,0,0,0,11.32-11.32l-48-48a8,8,0,0,0-11.32,0l-48,48A8,8,0,0,0,85.66,85.66Z%27%3e%3c/path%3e%3c/svg%3e');">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[var(--warm-subtle)] px-10 py-4">
+<div class="flex items-center gap-3">
+<div class="size-8 text-[var(--warm-accent)]">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 4C12.95 4 4 12.95 4 24C4 35.05 12.95 44 24 44C35.05 44 44 35.05 44 24C44 12.95 35.05 4 24 4ZM22 34V14L12 24L22 34Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-[var(--warm-dark)] text-xl font-bold leading-tight">Mujeres Non Stop</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-[var(--warm-dark)] text-sm font-medium leading-normal hover:text-[var(--warm-accent)] transition-colors" href="#">Home</a>
+<a class="text-[var(--warm-dark)] text-sm font-medium leading-normal hover:text-[var(--warm-accent)] transition-colors" href="#">About</a>
+<a class="text-[var(--warm-dark)] text-sm font-medium leading-normal hover:text-[var(--warm-accent)] transition-colors" href="#">Events</a>
+<a class="text-[var(--warm-dark)] text-sm font-medium leading-normal hover:text-[var(--warm-accent)] transition-colors" href="#">Resources</a>
+<a class="text-[var(--warm-dark)] text-sm font-medium leading-normal hover:text-[var(--warm-accent)] transition-colors" href="#">Contact</a>
+</nav>
+<button class="flex min-w-[100px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-[var(--warm-accent)] text-white text-sm font-bold leading-normal tracking-wide shadow-sm hover:bg-opacity-90 transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--warm-accent)] focus:ring-offset-[var(--warm-bg)]">
+<span class="truncate">Apply Now</span>
+</button>
+</header>
+<main class="flex flex-1 justify-center py-12 sm:py-16 md:py-20">
+<div class="w-full max-w-2xl px-4 sm:px-6 lg:px-8">
+<div class="progress-indicator">
+<div class="progress-step step-active">
+<div class="step-circle">1</div>
+<div class="step-label">Personal</div>
+</div>
+<div class="progress-step step-inactive">
+<div class="step-circle">2</div>
+<div class="step-label">Professional</div>
+</div>
+<div class="progress-step step-inactive">
+<div class="step-circle">3</div>
+<div class="step-label">Motivation</div>
+</div>
+<div class="progress-step step-inactive">
+<div class="step-circle">4</div>
+<div class="step-label">Submit</div>
+</div>
+</div>
+<div class="bg-white rounded-2xl shadow-lg p-8 space-y-8">
+<div class="text-center">
+<h2 class="text-3xl font-bold text-[var(--warm-dark)]">Personal Information</h2>
+<p class="mt-2 text-gray-600">Let's start with the basics.</p>
+</div>
+<form class="space-y-6">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-medium leading-6 text-[var(--warm-dark)]" for="full-name">Full Name</label>
+<div class="mt-2">
+<input class="form-input block w-full rounded-lg border-0 py-3 px-4 text-[var(--warm-dark)] bg-[var(--warm-bg)] ring-1 ring-inset ring-[var(--warm-subtle)] placeholder:text-[var(--warm-muted)] focus:ring-2 focus:ring-inset focus:ring-[var(--warm-accent)] sm:text-sm sm:leading-6" id="full-name" name="full-name" placeholder="e.g., Maria Rodriguez" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium leading-6 text-[var(--warm-dark)]" for="email">Email Address</label>
+<div class="mt-2">
+<input class="form-input block w-full rounded-lg border-0 py-3 px-4 text-[var(--warm-dark)] bg-[var(--warm-bg)] ring-1 ring-inset ring-[var(--warm-subtle)] placeholder:text-[var(--warm-muted)] focus:ring-2 focus:ring-inset focus:ring-[var(--warm-accent)] sm:text-sm sm:leading-6" id="email" name="email" placeholder="you@example.com" type="email"/>
+</div>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium leading-6 text-[var(--warm-dark)]" for="phone-number">Phone Number</label>
+<div class="mt-2">
+<input class="form-input block w-full rounded-lg border-0 py-3 px-4 text-[var(--warm-dark)] bg-[var(--warm-bg)] ring-1 ring-inset ring-[var(--warm-subtle)] placeholder:text-[var(--warm-muted)] focus:ring-2 focus:ring-inset focus:ring-[var(--warm-accent)] sm:text-sm sm:leading-6" id="phone-number" name="phone-number" placeholder="+1 (555) 123-4567" type="tel"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-medium leading-6 text-[var(--warm-dark)]" for="country">Country</label>
+<div class="mt-2">
+<select class="form-select block w-full rounded-lg border-0 py-3 px-4 text-[var(--warm-dark)] bg-[var(--warm-bg)] ring-1 ring-inset ring-[var(--warm-subtle)] focus:ring-2 focus:ring-inset focus:ring-[var(--warm-accent)] sm:text-sm sm:leading-6" id="country" name="country">
+<option>Select your country</option>
+<option>Spain</option>
+<option>Mexico</option>
+<option>Argentina</option>
+<option>United States</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium leading-6 text-[var(--warm-dark)]" for="city">City</label>
+<div class="mt-2">
+<input class="form-input block w-full rounded-lg border-0 py-3 px-4 text-[var(--warm-dark)] bg-[var(--warm-bg)] ring-1 ring-inset ring-[var(--warm-subtle)] placeholder:text-[var(--warm-muted)] focus:ring-2 focus:ring-inset focus:ring-[var(--warm-accent)] sm:text-sm sm:leading-6" id="city" name="city" placeholder="e.g., Barcelona" type="text"/>
+</div>
+</div>
+</div>
+<div class="flex justify-end pt-4">
+<button class="flex w-full sm:w-auto min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-[var(--warm-accent)] text-white text-base font-bold leading-normal tracking-wide shadow-md hover:bg-opacity-90 transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--warm-accent)] focus:ring-offset-white" type="submit">
+<span class="truncate">Next Step</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>
