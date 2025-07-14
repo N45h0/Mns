@@ -86,95 +86,84 @@
 <body class="bg-[var(--warm-bg)] text-[var(--warm-dark)]">
 <div class="relative flex size-full min-h-screen flex-col" style="--select-button-svg: url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724px%27 height=%2724px%27 fill=%27rgb(154,76,134)%27 viewBox=%270 0 256 256%27%3e%3cpath d=%27M181.66,170.34a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-48-48a8,8,0,0,1,11.32-11.32L128,212.69l42.34-42.35A8,8,0,0,1,181.66,170.34Zm-96-84.68L128,43.31l42.34,42.35a8,8,0,0,0,11.32-11.32l-48-48a8,8,0,0,0-11.32,0l-48,48A8,8,0,0,0,85.66,85.66Z%27%3e%3c/path%3e%3c/svg%3e');">
 <div class="layout-container flex h-full grow flex-col">
-<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[var(--warm-subtle)] px-10 py-4">
-<div class="flex items-center gap-3">
-<div class="size-8 text-[var(--warm-accent)]">
-<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path d="M24 4C12.95 4 4 12.95 4 24C4 35.05 12.95 44 24 44C35.05 44 44 35.05 44 24C44 12.95 35.05 4 24 4ZM22 34V14L12 24L22 34Z" fill="currentColor"></path>
-</svg>
-</div>
-<h2 class="text-[var(--warm-dark)] text-xl font-bold leading-tight">Mujeres Non Stop</h2>
-</div>
-<nav class="hidden md:flex items-center gap-8">
-<a class="text-[var(--warm-dark)] text-sm font-medium leading-normal hover:text-[var(--warm-accent)] transition-colors" href="#">Home</a>
-<a class="text-[var(--warm-dark)] text-sm font-medium leading-normal hover:text-[var(--warm-accent)] transition-colors" href="#">About</a>
-<a class="text-[var(--warm-dark)] text-sm font-medium leading-normal hover:text-[var(--warm-accent)] transition-colors" href="#">Events</a>
-<a class="text-[var(--warm-dark)] text-sm font-medium leading-normal hover:text-[var(--warm-accent)] transition-colors" href="#">Resources</a>
-<a class="text-[var(--warm-dark)] text-sm font-medium leading-normal hover:text-[var(--warm-accent)] transition-colors" href="#">Contact</a>
-</nav>
-<button class="flex min-w-[100px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-[var(--warm-accent)] text-white text-sm font-bold leading-normal tracking-wide shadow-sm hover:bg-opacity-90 transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--warm-accent)] focus:ring-offset-[var(--warm-bg)]">
-<span class="truncate">Apply Now</span>
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[var(--warm-subtle)] px-10 py-4">    <div class="flex items-center gap-3">
+        <div class="size-8 text-[var(--warm-accent)]">
+            <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 4C12.95 4 4 12.95 4 24C4 35.05 12.95 44 24 44C35.05 44 44 35.05 44 24C44 12.95 35.05 4 24 4ZM22 34V14L12 24L22 34Z" fill="currentColor"></path>
+            </svg>
+        </div>
+        <h2 class="text-[var(--warm-dark)] text-xl font-bold leading-tight"><a href="index.html">Mujeres Non Stop</a></h2>
+</div>        <nav class="hidden md:flex items-center gap-8">
+            <a class="text-[var(--warm-dark)] text-sm font-medium leading-normal hover:text-[var(--warm-accent)] transition-colors" href="index.html">Inicio</a>
+            <a class="text-[var(--warm-dark)] text-sm font-medium leading-normal hover:text-[var(--warm-accent)] transition-colors" href="nosotras.html">Nosotras</a>
+            <a class="text-[var(--warm-dark)] text-sm font-medium leading-normal hover:text-[var(--warm-accent)] transition-colors" href="historias.html">Historias</a>
+            <a class="text-[var(--warm-dark)] text-sm font-medium leading-normal hover:text-[var(--warm-accent)] transition-colors" href="postulacion.html">Postulación</a>
+            <a class="text-[var(--warm-dark)] text-sm font-medium leading-normal hover:text-[var(--warm-accent)] transition-colors" href="contacto.html">Contacto</a>
+</nav>        <button class="flex min-w-[100px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-[var(--warm-accent)] text-white text-sm font-bold leading-normal tracking-wide shadow-sm hover:bg-opacity-90 transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--warm-accent)] focus:ring-offset-[var(--warm-bg)]">
+            <span class="truncate">Postular Ahora</span>
 </button>
 </header>
 <main class="flex flex-1 justify-center py-12 sm:py-16 md:py-20">
 <div class="w-full max-w-2xl px-4 sm:px-6 lg:px-8">
-<div class="progress-indicator">
-<div class="progress-step step-active">
-<div class="step-circle">1</div>
-<div class="step-label">Personal</div>
+<div class="progress-indicator">                <div class="progress-step step-active">
+                    <div class="step-circle">1</div>
+                    <div class="step-label">Personal</div>
+                </div>
+                <div class="progress-step step-inactive">
+                    <div class="step-circle">2</div>
+                    <div class="step-label">Profesional</div>
+                </div>
+                <div class="progress-step step-inactive">
+                    <div class="step-circle">3</div>
+                    <div class="step-label">Motivación</div>
+                </div>
+                <div class="progress-step step-inactive">
+                    <div class="step-circle">4</div>
+                    <div class="step-label">Enviar</div>
 </div>
-<div class="progress-step step-inactive">
-<div class="step-circle">2</div>
-<div class="step-label">Professional</div>
 </div>
-<div class="progress-step step-inactive">
-<div class="step-circle">3</div>
-<div class="step-label">Motivation</div>
-</div>
-<div class="progress-step step-inactive">
-<div class="step-circle">4</div>
-<div class="step-label">Submit</div>
-</div>
-</div>
-<div class="bg-white rounded-2xl shadow-lg p-8 space-y-8">
-<div class="text-center">
-<h2 class="text-3xl font-bold text-[var(--warm-dark)]">Personal Information</h2>
-<p class="mt-2 text-gray-600">Let's start with the basics.</p>
+<div class="bg-white rounded-2xl shadow-lg p-8 space-y-8">            <div class="text-center">
+                <h2 class="text-3xl font-bold text-[var(--warm-dark)]">Información Personal</h2>
+                <p class="mt-2 text-gray-600">Comencemos con lo básico.</p>
 </div>
 <form class="space-y-6">
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-<div>
-<label class="block text-sm font-medium leading-6 text-[var(--warm-dark)]" for="full-name">Full Name</label>
-<div class="mt-2">
-<input class="form-input block w-full rounded-lg border-0 py-3 px-4 text-[var(--warm-dark)] bg-[var(--warm-bg)] ring-1 ring-inset ring-[var(--warm-subtle)] placeholder:text-[var(--warm-muted)] focus:ring-2 focus:ring-inset focus:ring-[var(--warm-accent)] sm:text-sm sm:leading-6" id="full-name" name="full-name" placeholder="e.g., Maria Rodriguez" type="text"/>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">                <div>
+                    <label class="block text-sm font-medium leading-6 text-[var(--warm-dark)]" for="full-name">Nombre Completo</label>
+                    <div class="mt-2">
+                        <input class="form-input block w-full rounded-lg border-0 py-3 px-4 text-[var(--warm-dark)] bg-[var(--warm-bg)] ring-1 ring-inset ring-[var(--warm-subtle)] placeholder:text-[var(--warm-muted)] focus:ring-2 focus:ring-inset focus:ring-[var(--warm-accent)] sm:text-sm sm:leading-6" id="full-name" name="full-name" placeholder="ej., María Rodríguez" type="text"/>
+</div>
+</div>                <div>
+                    <label class="block text-sm font-medium leading-6 text-[var(--warm-dark)]" for="email">Correo Electrónico</label>
+                    <div class="mt-2">
+                        <input class="form-input block w-full rounded-lg border-0 py-3 px-4 text-[var(--warm-dark)] bg-[var(--warm-bg)] ring-1 ring-inset ring-[var(--warm-subtle)] placeholder:text-[var(--warm-muted)] focus:ring-2 focus:ring-inset focus:ring-[var(--warm-accent)] sm:text-sm sm:leading-6" id="email" name="email" placeholder="tu@ejemplo.com" type="email"/>
 </div>
 </div>
-<div>
-<label class="block text-sm font-medium leading-6 text-[var(--warm-dark)]" for="email">Email Address</label>
-<div class="mt-2">
-<input class="form-input block w-full rounded-lg border-0 py-3 px-4 text-[var(--warm-dark)] bg-[var(--warm-bg)] ring-1 ring-inset ring-[var(--warm-subtle)] placeholder:text-[var(--warm-muted)] focus:ring-2 focus:ring-inset focus:ring-[var(--warm-accent)] sm:text-sm sm:leading-6" id="email" name="email" placeholder="you@example.com" type="email"/>
+</div>            <div>
+                <label class="block text-sm font-medium leading-6 text-[var(--warm-dark)]" for="phone-number">Número de Teléfono</label>
+                <div class="mt-2">
+                    <input class="form-input block w-full rounded-lg border-0 py-3 px-4 text-[var(--warm-dark)] bg-[var(--warm-bg)] ring-1 ring-inset ring-[var(--warm-subtle)] placeholder:text-[var(--warm-muted)] focus:ring-2 focus:ring-inset focus:ring-[var(--warm-accent)] sm:text-sm sm:leading-6" id="phone-number" name="phone-number" placeholder="+56 9 1234 5678" type="tel"/>
 </div>
 </div>
-</div>
-<div>
-<label class="block text-sm font-medium leading-6 text-[var(--warm-dark)]" for="phone-number">Phone Number</label>
-<div class="mt-2">
-<input class="form-input block w-full rounded-lg border-0 py-3 px-4 text-[var(--warm-dark)] bg-[var(--warm-bg)] ring-1 ring-inset ring-[var(--warm-subtle)] placeholder:text-[var(--warm-muted)] focus:ring-2 focus:ring-inset focus:ring-[var(--warm-accent)] sm:text-sm sm:leading-6" id="phone-number" name="phone-number" placeholder="+1 (555) 123-4567" type="tel"/>
-</div>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-<div>
-<label class="block text-sm font-medium leading-6 text-[var(--warm-dark)]" for="country">Country</label>
-<div class="mt-2">
-<select class="form-select block w-full rounded-lg border-0 py-3 px-4 text-[var(--warm-dark)] bg-[var(--warm-bg)] ring-1 ring-inset ring-[var(--warm-subtle)] focus:ring-2 focus:ring-inset focus:ring-[var(--warm-accent)] sm:text-sm sm:leading-6" id="country" name="country">
-<option>Select your country</option>
-<option>Spain</option>
-<option>Mexico</option>
-<option>Argentina</option>
-<option>United States</option>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">                <div>
+                    <label class="block text-sm font-medium leading-6 text-[var(--warm-dark)]" for="country">País</label>
+                    <div class="mt-2">
+                        <select class="form-select block w-full rounded-lg border-0 py-3 px-4 text-[var(--warm-dark)] bg-[var(--warm-bg)] ring-1 ring-inset ring-[var(--warm-subtle)] focus:ring-2 focus:ring-inset focus:ring-[var(--warm-accent)] sm:text-sm sm:leading-6" id="country" name="country">
+                            <option>Selecciona tu país</option>
+                            <option>Chile</option>
+                            <option>España</option>
+                            <option>México</option>
+                            <option>Argentina</option>
 </select>
 </div>
-</div>
-<div>
-<label class="block text-sm font-medium leading-6 text-[var(--warm-dark)]" for="city">City</label>
-<div class="mt-2">
-<input class="form-input block w-full rounded-lg border-0 py-3 px-4 text-[var(--warm-dark)] bg-[var(--warm-bg)] ring-1 ring-inset ring-[var(--warm-subtle)] placeholder:text-[var(--warm-muted)] focus:ring-2 focus:ring-inset focus:ring-[var(--warm-accent)] sm:text-sm sm:leading-6" id="city" name="city" placeholder="e.g., Barcelona" type="text"/>
-</div>
+</div>                <div>
+                    <label class="block text-sm font-medium leading-6 text-[var(--warm-dark)]" for="city">Ciudad</label>
+                    <div class="mt-2">
+                        <input class="form-input block w-full rounded-lg border-0 py-3 px-4 text-[var(--warm-dark)] bg-[var(--warm-bg)] ring-1 ring-inset ring-[var(--warm-subtle)] placeholder:text-[var(--warm-muted)] focus:ring-2 focus:ring-inset focus:ring-[var(--warm-accent)] sm:text-sm sm:leading-6" id="city" name="city" placeholder="ej., Santiago" type="text"/>
 </div>
 </div>
-<div class="flex justify-end pt-4">
-<button class="flex w-full sm:w-auto min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-[var(--warm-accent)] text-white text-base font-bold leading-normal tracking-wide shadow-md hover:bg-opacity-90 transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--warm-accent)] focus:ring-offset-white" type="submit">
-<span class="truncate">Next Step</span>
+</div>
+<div class="flex justify-end pt-4">            <button class="flex w-full sm:w-auto min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-[var(--warm-accent)] text-white text-base font-bold leading-normal tracking-wide shadow-md hover:bg-opacity-90 transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--warm-accent)] focus:ring-offset-white" type="submit">
+                <span class="truncate">Siguiente Paso</span>
 </button>
 </div>
 </form>
