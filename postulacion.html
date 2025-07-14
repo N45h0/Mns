@@ -3,92 +3,30 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
-<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800" onload="this.rel='stylesheet'" rel="stylesheet"/>
-<title>Stitch Design</title>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Postulación - Mujeres Non Stop</title>
 <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <style type="text/tailwindcss">
       :root {
         --warm-bg: #fcf8fb;
         --warm-dark: #1b0d18;
-        --warm-accent: #d843a8;--warm-subtle: #f3e7f0;
+        --warm-accent: #d843a8;
+        --warm-subtle: #f3e7f0;
         --warm-muted: #9a4c86;
       }
       body {
         font-family: 'Plus Jakarta Sans', 'Noto Sans', sans-serif;
-      }
-      .progress-indicator {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        margin-bottom: 2rem;
-      }
-      .progress-step {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-grow: 1;
-        position: relative;
-      }
-      .progress-step::after {
-        content: '';
-        position: absolute;
-        top: 16px;left: 50%;
-        width: 100%;
-        height: 2px;
-        background-color: var(--warm-subtle);
-        z-index: 1;
-      }
-      .progress-step:last-child::after {
-        display: none;
-      }
-      .step-circle {
-        width: 32px;
-        height: 32px;
-        border-radius: 9999px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: 700;
-        z-index: 2;
-        transition: all 0.3s ease;
-      }
-      .step-active .step-circle {
-        background-color: var(--warm-accent);
-        color: white;
-        border: 2px solid var(--warm-accent);
-      }
-      .step-inactive .step-circle {
-        background-color: var(--warm-bg);
-        color: var(--warm-muted);
-        border: 2px solid var(--warm-subtle);
-      }
-      .step-complete .step-circle {
-        background-color: var(--warm-accent);
-        color: white;
-        border: 2px solid var(--warm-accent);
-      }
-      .step-complete::after {
-        background-color: var(--warm-accent);
-      }
-      .step-label {
-        margin-top: 0.5rem;
-        font-size: 0.875rem;
-        font-weight: 500;
-        color: var(--warm-dark);
-        z-index: 2;
-        background-color: var(--warm-bg);
-        padding: 0 0.5rem;
       }
     </style>
 </head>
 <body>
 <div class="relative flex size-full min-h-screen flex-col bg-[#fcf8fb] group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
 <div class="layout-container flex h-full grow flex-col">
-<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f3e7f0] px-10 py-4 shadow-sm">    <div class="flex items-center gap-4 text-[#1b0d18]">
-        <a class="flex items-center gap-3" href="index.html">
-            <svg class="h-8 w-8 text-[#eb13b5]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f3e7f0] px-10 py-4 shadow-sm">
+<div class="flex items-center gap-4 text-[#1b0d18]">
+<a class="flex items-center gap-3" href="index.html">
+<svg class="h-8 w-8 text-[#eb13b5]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_6_330)">
 <path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
 </g>
@@ -98,78 +36,75 @@
 </svg>
 <h1 class="text-[#1b0d18] text-xl font-bold leading-tight tracking-[-0.015em]">Mujeres Non Stop</h1>
 </a>
-</div>        <nav class="flex items-center gap-8">
-            <a class="text-base font-medium text-[#1b0d18] transition-colors hover:text-[#eb13b5]" href="index.html">Inicio</a>
-            <a class="text-base font-medium text-[#1b0d18] transition-colors hover:text-[#eb13b5]" href="nosotras.html">Nosotras</a>
-            <a class="text-base font-medium text-[#1b0d18] transition-colors hover:text-[#eb13b5]" href="historias.html">Historias</a>
-            <a class="text-base font-bold text-[#eb13b5] transition-colors hover:text-[#eb13b5]" href="postulacion.html">Postulación</a>
-            <a class="text-base font-medium text-[#1b0d18] transition-colors hover:text-[#eb13b5]" href="contacto.html">Contacto</a>
-            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-11 px-6 bg-[#eb13b5] text-[#fcf8fb] text-base font-bold leading-normal tracking-[0.015em] shadow-md transition-transform hover:scale-105" onclick="window.location.href='postulacion.html'">
-                <span class="truncate">Únete a Nosotras</span>
-</button>
+</div>
+<nav class="flex items-center gap-8">
+<a class="text-base font-medium text-[#1b0d18] transition-colors hover:text-[#eb13b5]" href="index.html">Inicio</a>
+<a class="text-base font-medium text-[#1b0d18] transition-colors hover:text-[#eb13b5]" href="nosotras.html">Nosotras</a>
+<a class="text-base font-medium text-[#1b0d18] transition-colors hover:text-[#eb13b5]" href="historias.html">Historias</a>
+<a class="text-base font-bold text-[#eb13b5] transition-colors hover:text-[#eb13b5]" href="postulacion.html">Postulación</a>
+<a class="text-base font-medium text-[#1b0d18] transition-colors hover:text-[#eb13b5]" href="contacto.html">Contacto</a>
 </nav>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-11 px-6 bg-[#eb13b5] text-[#fcf8fb] text-base font-bold leading-normal tracking-[0.015em] shadow-md transition-transform hover:scale-105" onclick="window.location.href='postulacion.html'">
+<span class="truncate">Únete a Nosotras</span>
+</button>
 </header>
 <main class="flex flex-1 justify-center py-12 sm:py-16 md:py-20">
 <div class="w-full max-w-2xl px-4 sm:px-6 lg:px-8">
-<div class="progress-indicator">                <div class="progress-step step-active">
-                    <div class="step-circle">1</div>
-                    <div class="step-label">Personal</div>
-                </div>
-                <div class="progress-step step-inactive">
-                    <div class="step-circle">2</div>
-                    <div class="step-label">Profesional</div>
-                </div>
-                <div class="progress-step step-inactive">
-                    <div class="step-circle">3</div>
-                    <div class="step-label">Motivación</div>
-                </div>
-                <div class="progress-step step-inactive">
-                    <div class="step-circle">4</div>
-                    <div class="step-label">Enviar</div>
-</div>
-</div>
-<div class="bg-white rounded-2xl shadow-lg p-8 space-y-8">            <div class="text-center">
-                <h2 class="text-3xl font-bold text-[var(--warm-dark)]">Información Personal</h2>
-                <p class="mt-2 text-gray-600">Comencemos con lo básico.</p>
+<div class="bg-white rounded-2xl shadow-lg p-8 space-y-8">
+<div class="text-center">
+<h2 class="text-3xl font-bold text-[var(--warm-dark)]">Postula a Mujeres Non Stop</h2>
+<p class="mt-2 text-gray-600">Abrimos cupos 2 veces al año. Llena el formulario para iniciar tu proceso. ¡Queremos conocerte! El proceso consiste en el llenado de este formulario y luego 2 entrevistas a las que serás citada oportunamente vía mail.</p>
 </div>
 <form class="space-y-6">
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">                <div>
-                    <label class="block text-sm font-medium leading-6 text-[var(--warm-dark)]" for="full-name">Nombre Completo</label>
-                    <div class="mt-2">
-                        <input class="form-input block w-full rounded-lg border-0 py-3 px-4 text-[var(--warm-dark)] bg-[var(--warm-bg)] ring-1 ring-inset ring-[var(--warm-subtle)] placeholder:text-[var(--warm-muted)] focus:ring-2 focus:ring-inset focus:ring-[var(--warm-accent)] sm:text-sm sm:leading-6" id="full-name" name="full-name" placeholder="ej., María Rodríguez" type="text"/>
-</div>
-</div>                <div>
-                    <label class="block text-sm font-medium leading-6 text-[var(--warm-dark)]" for="email">Correo Electrónico</label>
-                    <div class="mt-2">
-                        <input class="form-input block w-full rounded-lg border-0 py-3 px-4 text-[var(--warm-dark)] bg-[var(--warm-bg)] ring-1 ring-inset ring-[var(--warm-subtle)] placeholder:text-[var(--warm-muted)] focus:ring-2 focus:ring-inset focus:ring-[var(--warm-accent)] sm:text-sm sm:leading-6" id="email" name="email" placeholder="tu@ejemplo.com" type="email"/>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-medium leading-6 text-[var(--warm-dark)]" for="full-name">Nombre Completo</label>
+<div class="mt-2">
+<input class="form-input block w-full rounded-lg border-0 py-3 px-4 text-[var(--warm-dark)] bg-[var(--warm-bg)] ring-1 ring-inset ring-[var(--warm-subtle)] placeholder:text-[var(--warm-muted)] focus:ring-2 focus:ring-inset focus:ring-[var(--warm-accent)] sm:text-sm sm:leading-6" id="full-name" name="full-name" type="text"/>
 </div>
 </div>
-</div>            <div>
-                <label class="block text-sm font-medium leading-6 text-[var(--warm-dark)]" for="phone-number">Número de Teléfono</label>
-                <div class="mt-2">
-                    <input class="form-input block w-full rounded-lg border-0 py-3 px-4 text-[var(--warm-dark)] bg-[var(--warm-bg)] ring-1 ring-inset ring-[var(--warm-subtle)] placeholder:text-[var(--warm-muted)] focus:ring-2 focus:ring-inset focus:ring-[var(--warm-accent)] sm:text-sm sm:leading-6" id="phone-number" name="phone-number" placeholder="+56 9 1234 5678" type="tel"/>
-</div>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">                <div>
-                    <label class="block text-sm font-medium leading-6 text-[var(--warm-dark)]" for="country">País</label>
-                    <div class="mt-2">
-                        <select class="form-select block w-full rounded-lg border-0 py-3 px-4 text-[var(--warm-dark)] bg-[var(--warm-bg)] ring-1 ring-inset ring-[var(--warm-subtle)] focus:ring-2 focus:ring-inset focus:ring-[var(--warm-accent)] sm:text-sm sm:leading-6" id="country" name="country">
-                            <option>Selecciona tu país</option>
-                            <option>Chile</option>
-                            <option>España</option>
-                            <option>México</option>
-                            <option>Argentina</option>
-</select>
-</div>
-</div>                <div>
-                    <label class="block text-sm font-medium leading-6 text-[var(--warm-dark)]" for="city">Ciudad</label>
-                    <div class="mt-2">
-                        <input class="form-input block w-full rounded-lg border-0 py-3 px-4 text-[var(--warm-dark)] bg-[var(--warm-bg)] ring-1 ring-inset ring-[var(--warm-subtle)] placeholder:text-[var(--warm-muted)] focus:ring-2 focus:ring-inset focus:ring-[var(--warm-accent)] sm:text-sm sm:leading-6" id="city" name="city" placeholder="ej., Santiago" type="text"/>
+<div>
+<label class="block text-sm font-medium leading-6 text-[var(--warm-dark)]" for="email">Correo Electrónico</label>
+<div class="mt-2">
+<input class="form-input block w-full rounded-lg border-0 py-3 px-4 text-[var(--warm-dark)] bg-[var(--warm-bg)] ring-1 ring-inset ring-[var(--warm-subtle)] placeholder:text-[var(--warm-muted)] focus:ring-2 focus:ring-inset focus:ring-[var(--warm-accent)] sm:text-sm sm:leading-6" id="email" name="email" type="email"/>
 </div>
 </div>
 </div>
-<div class="flex justify-end pt-4">            <button class="flex w-full sm:w-auto min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-[var(--warm-accent)] text-white text-base font-bold leading-normal tracking-wide shadow-md hover:bg-opacity-90 transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--warm-accent)] focus:ring-offset-white" type="submit">
-                <span class="truncate">Siguiente Paso</span>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-medium leading-6 text-[var(--warm-dark)]" for="edad">Edad</label>
+<div class="mt-2">
+<input class="form-input block w-full rounded-lg border-0 py-3 px-4 text-[var(--warm-dark)] bg-[var(--warm-bg)] ring-1 ring-inset ring-[var(--warm-subtle)] placeholder:text-[var(--warm-muted)] focus:ring-2 focus:ring-inset focus:ring-[var(--warm-accent)] sm:text-sm sm:leading-6" id="edad" name="edad" type="number"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium leading-6 text-[var(--warm-dark)]" for="residencia">Ciudad de Residencia</label>
+<div class="mt-2">
+<input class="form-input block w-full rounded-lg border-0 py-3 px-4 text-[var(--warm-dark)] bg-[var(--warm-bg)] ring-1 ring-inset ring-[var(--warm-subtle)] placeholder:text-[var(--warm-muted)] focus:ring-2 focus:ring-inset focus:ring-[var(--warm-accent)] sm:text-sm sm:leading-6" id="residencia" name="residencia" type="text"/>
+</div>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium leading-6 text-[var(--warm-dark)]" for="dedicacion">¿A qué te dedicas?</label>
+<div class="mt-2">
+<input class="form-input block w-full rounded-lg border-0 py-3 px-4 text-[var(--warm-dark)] bg-[var(--warm-bg)] ring-1 ring-inset ring-[var(--warm-subtle)] placeholder:text-[var(--warm-muted)] focus:ring-2 focus:ring-inset focus:ring-[var(--warm-accent)] sm:text-sm sm:leading-6" id="dedicacion" name="dedicacion" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium leading-6 text-[var(--warm-dark)]" for="rrss">Tu red social principal (LinkedIn, Instagram, etc.)</label>
+<div class="mt-2">
+<input class="form-input block w-full rounded-lg border-0 py-3 px-4 text-[var(--warm-dark)] bg-[var(--warm-bg)] ring-1 ring-inset ring-[var(--warm-subtle)] placeholder:text-[var(--warm-muted)] focus:ring-2 focus:ring-inset focus:ring-[var(--warm-accent)] sm:text-sm sm:leading-6" id="rrss" name="rrss" type="url"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium leading-6 text-[var(--warm-dark)]" for="porque">¿Por qué quieres ser parte de Mujeres Non Stop?</label>
+<div class="mt-2">
+<textarea class="form-textarea block w-full rounded-lg border-0 py-3 px-4 text-[var(--warm-dark)] bg-[var(--warm-bg)] ring-1 ring-inset ring-[var(--warm-subtle)] placeholder:text-[var(--warm-muted)] focus:ring-2 focus:ring-inset focus:ring-[var(--warm-accent)] sm:text-sm sm:leading-6" rows="4" id="porque" name="porque"></textarea>
+</div>
+</div>
+<div class="flex justify-end pt-4">
+<button class="flex w-full sm:w-auto min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-[var(--warm-accent)] text-white text-base font-bold leading-normal tracking-wide shadow-md hover:bg-opacity-90 transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--warm-accent)] focus:ring-offset-white" type="submit">
+<span class="truncate">Enviar Postulación</span>
 </button>
 </div>
 </form>
