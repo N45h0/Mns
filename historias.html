@@ -25,12 +25,12 @@
         }
     </style>
 </head>
-<body class="bg-[var(--brand-background)] text-[var(--brand-text-primary)]">
-<div class="relative flex size-full min-h-screen flex-col overflow-x-hidden">
-<header class="sticky top-0 z-50 w-full bg-[var(--brand-background)]/80 backdrop-blur-sm">
-<div class="container mx-auto px-4 sm:px-6 lg:px-8">        <div class="flex items-center justify-between h-20">
-            <a class="flex items-center gap-3" href="index.html">
-                <svg class="h-8 w-8 text-[var(--brand-primary)]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<body>
+<div class="relative flex size-full min-h-screen flex-col bg-[#fcf8fb] group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f3e7f0] px-10 py-4 shadow-sm">    <div class="flex items-center gap-4 text-[#1b0d18]">
+        <a class="flex items-center gap-3" href="index.html">
+            <svg class="h-8 w-8 text-[#eb13b5]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_6_330)">
 <path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
 </g>
@@ -38,23 +38,18 @@
 <clipPath id="clip0_6_330"><rect fill="white" height="48" width="48"></rect></clipPath>
 </defs>
 </svg>
-<h2 class="text-xl font-bold tracking-tight">Mujeres Non Stop</h2>
-</a>            <nav class="hidden md:flex items-center gap-8">
-                <a class="nav-link text-sm font-medium" href="index.html">Inicio</a>
-                <a class="nav-link text-sm font-medium" href="nosotras.html">Nosotras</a>
-                <a class="nav-link text-sm font-medium" href="historias.html">Historias</a>
-                <a class="nav-link text-sm font-medium" href="postulacion.html">Postulación</a>
-                <a class="nav-link text-sm font-medium" href="contacto.html">Contacto</a>
+<h1 class="text-[#1b0d18] text-xl font-bold leading-tight tracking-[-0.015em]">Mujeres Non Stop</h1>
+</a>
+</div>        <nav class="flex items-center gap-8">
+            <a class="text-base font-medium text-[#1b0d18] transition-colors hover:text-[#eb13b5]" href="index.html">Inicio</a>
+            <a class="text-base font-medium text-[#1b0d18] transition-colors hover:text-[#eb13b5]" href="nosotras.html">Nosotras</a>
+            <a class="text-base font-bold text-[#eb13b5] transition-colors hover:text-[#eb13b5]" href="historias.html">Historias</a>
+            <a class="text-base font-medium text-[#1b0d18] transition-colors hover:text-[#eb13b5]" href="postulacion.html">Postulación</a>
+            <a class="text-base font-medium text-[#1b0d18] transition-colors hover:text-[#eb13b5]" href="contacto.html">Contacto</a>
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-11 px-6 bg-[#eb13b5] text-[#fcf8fb] text-base font-bold leading-normal tracking-[0.015em] shadow-md transition-transform hover:scale-105" onclick="window.location.href='postulacion.html'">
+                <span class="truncate">Únete a Nosotras</span>
+</button>
 </nav>
-<div class="flex items-center gap-4">                <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-[var(--brand-primary)] text-white text-sm font-bold shadow-lg shadow-[var(--brand-primary)]/30 transition-all duration-300 hover:scale-105 hover:shadow-[var(--brand-primary)]/50" onclick="window.location.href='postulacion.html'">
-                    <span class="truncate">Únete a Nosotras</span>
-</button>
-<button class="md:hidden p-2 rounded-md text-[var(--brand-text-primary)]">
-<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</button>
-</div>
-</div>
-</div>
 </header>
 <main class="flex-1">
 <section class="py-16 md:py-24">
@@ -177,5 +172,5 @@
 </div>
 </footer>
 </div>
-
+</div>
 </body></html>

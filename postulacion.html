@@ -83,25 +83,31 @@
       }
     </style>
 </head>
-<body class="bg-[var(--warm-bg)] text-[var(--warm-dark)]">
-<div class="relative flex size-full min-h-screen flex-col" style="--select-button-svg: url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724px%27 height=%2724px%27 fill=%27rgb(154,76,134)%27 viewBox=%270 0 256 256%27%3e%3cpath d=%27M181.66,170.34a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-48-48a8,8,0,0,1,11.32-11.32L128,212.69l42.34-42.35A8,8,0,0,1,181.66,170.34Zm-96-84.68L128,43.31l42.34,42.35a8,8,0,0,0,11.32-11.32l-48-48a8,8,0,0,0-11.32,0l-48,48A8,8,0,0,0,85.66,85.66Z%27%3e%3c/path%3e%3c/svg%3e');">
+<body>
+<div class="relative flex size-full min-h-screen flex-col bg-[#fcf8fb] group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
 <div class="layout-container flex h-full grow flex-col">
-<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[var(--warm-subtle)] px-10 py-4">    <div class="flex items-center gap-3">
-        <div class="size-8 text-[var(--warm-accent)]">
-            <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                <path d="M24 4C12.95 4 4 12.95 4 24C4 35.05 12.95 44 24 44C35.05 44 44 35.05 44 24C44 12.95 35.05 4 24 4ZM22 34V14L12 24L22 34Z" fill="currentColor"></path>
-            </svg>
-        </div>
-        <h2 class="text-[var(--warm-dark)] text-xl font-bold leading-tight"><a href="index.html">Mujeres Non Stop</a></h2>
-</div>        <nav class="hidden md:flex items-center gap-8">
-            <a class="text-[var(--warm-dark)] text-sm font-medium leading-normal hover:text-[var(--warm-accent)] transition-colors" href="index.html">Inicio</a>
-            <a class="text-[var(--warm-dark)] text-sm font-medium leading-normal hover:text-[var(--warm-accent)] transition-colors" href="nosotras.html">Nosotras</a>
-            <a class="text-[var(--warm-dark)] text-sm font-medium leading-normal hover:text-[var(--warm-accent)] transition-colors" href="historias.html">Historias</a>
-            <a class="text-[var(--warm-dark)] text-sm font-medium leading-normal hover:text-[var(--warm-accent)] transition-colors" href="postulacion.html">Postulación</a>
-            <a class="text-[var(--warm-dark)] text-sm font-medium leading-normal hover:text-[var(--warm-accent)] transition-colors" href="contacto.html">Contacto</a>
-</nav>        <button class="flex min-w-[100px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-[var(--warm-accent)] text-white text-sm font-bold leading-normal tracking-wide shadow-sm hover:bg-opacity-90 transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--warm-accent)] focus:ring-offset-[var(--warm-bg)]">
-            <span class="truncate">Postular Ahora</span>
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f3e7f0] px-10 py-4 shadow-sm">    <div class="flex items-center gap-4 text-[#1b0d18]">
+        <a class="flex items-center gap-3" href="index.html">
+            <svg class="h-8 w-8 text-[#eb13b5]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_330)">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</g>
+<defs>
+<clipPath id="clip0_6_330"><rect fill="white" height="48" width="48"></rect></clipPath>
+</defs>
+</svg>
+<h1 class="text-[#1b0d18] text-xl font-bold leading-tight tracking-[-0.015em]">Mujeres Non Stop</h1>
+</a>
+</div>        <nav class="flex items-center gap-8">
+            <a class="text-base font-medium text-[#1b0d18] transition-colors hover:text-[#eb13b5]" href="index.html">Inicio</a>
+            <a class="text-base font-medium text-[#1b0d18] transition-colors hover:text-[#eb13b5]" href="nosotras.html">Nosotras</a>
+            <a class="text-base font-medium text-[#1b0d18] transition-colors hover:text-[#eb13b5]" href="historias.html">Historias</a>
+            <a class="text-base font-bold text-[#eb13b5] transition-colors hover:text-[#eb13b5]" href="postulacion.html">Postulación</a>
+            <a class="text-base font-medium text-[#1b0d18] transition-colors hover:text-[#eb13b5]" href="contacto.html">Contacto</a>
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-11 px-6 bg-[#eb13b5] text-[#fcf8fb] text-base font-bold leading-normal tracking-[0.015em] shadow-md transition-transform hover:scale-105" onclick="window.location.href='postulacion.html'">
+                <span class="truncate">Únete a Nosotras</span>
 </button>
+</nav>
 </header>
 <main class="flex flex-1 justify-center py-12 sm:py-16 md:py-20">
 <div class="w-full max-w-2xl px-4 sm:px-6 lg:px-8">

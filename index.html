@@ -7,7 +7,7 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <style type="text/tailwindcss">
       :root {
-        --primary-accent: #ed2abc;
+        --primary-accent: #eb13b5;
         --primary-text: #1b0d18;
         --secondary-text: #9a4c86;
         --background-light: #fcf8fb;
@@ -19,13 +19,13 @@
       }
     </style>
 </head>
-<body class="bg-[var(--background-light)] text-[var(--primary-text)]">
-<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
+<body class="bg-[#fcf8fb] text-[#1b0d18]">
+<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
 <div class="layout-container flex h-full grow flex-col">
-<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[var(--border-color)] px-10 py-4">
-<div class="flex items-center gap-4">
-<div class="size-6 text-[var(--primary-accent)]">
-<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f3e7f0] px-10 py-4 shadow-sm">
+<div class="flex items-center gap-4 text-[#1b0d18]">
+<a class="flex items-center gap-3" href="index.html">
+<svg class="h-8 w-8 text-[#eb13b5]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_6_330)">
 <path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
 </g>
@@ -35,17 +35,18 @@
 </clipPath>
 </defs>
 </svg>
+<h1 class="text-[#1b0d18] text-xl font-bold leading-tight tracking-[-0.015em]">Mujeres Non Stop</h1>
+</a>
 </div>
-<h2 class="text-xl font-bold tracking-tighter">Mujeres Non Stop</h2>
-</div>
-<div class="flex flex-1 justify-end gap-10">        <nav class="flex items-center gap-8">            <a class="text-sm font-medium hover:text-[var(--primary-accent)] transition-colors" href="nosotras.html">Nosotras</a>
-            <a class="text-sm font-medium hover:text-[var(--primary-accent)] transition-colors" href="historias.html">Historias</a>
-            <a class="text-sm font-medium hover:text-[var(--primary-accent)] transition-colors" href="postulacion.html">Postulación</a>
-            <a class="text-sm font-medium hover:text-[var(--primary-accent)] transition-colors" href="contacto.html">Contacto</a>
-</nav>        <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-[var(--primary-accent)] text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-all" onclick="window.location.href='postulacion.html'">
-            <span class="truncate">Únete al Círculo</span>
+<nav class="flex items-center gap-8">
+<a class="text-base font-bold text-[#eb13b5] transition-colors hover:text-[#eb13b5]" href="index.html">Inicio</a>
+<a class="text-base font-medium text-[#1b0d18] transition-colors hover:text-[#eb13b5]" href="nosotras.html">Nosotras</a>
+<a class="text-base font-medium text-[#1b0d18] transition-colors hover:text-[#eb13b5]" href="historias.html">Historias</a>
+<a class="text-base font-medium text-[#1b0d18] transition-colors hover:text-[#eb13b5]" href="postulacion.html">Postulación</a>
+<a class="text-base font-medium text-[#1b0d18] transition-colors hover:text-[#eb13b5]" href="contacto.html">Contacto</a>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-11 px-6 bg-[#eb13b5] text-[#fcf8fb] text-base font-bold leading-normal tracking-[0.015em] shadow-md transition-transform hover:scale-105" onclick="window.location.href='postulacion.html'">
+<span class="truncate">Únete a Nosotras</span>
 </button>
-</div>
 </header>
 <main class="flex flex-1 justify-center py-12 px-4 sm:px-6 lg:px-8">
 <div class="layout-content-container flex flex-col max-w-6xl flex-1 gap-16">
@@ -55,8 +56,8 @@
 <div class="flex flex-col gap-4 text-center max-w-3xl">
 <h1 class="text-white text-5xl font-extrabold leading-tight tracking-tighter @[480px]:text-6xl">Bienvenida a tu Círculo de Apoyo</h1>
 <p class="text-white text-lg font-light leading-relaxed">Una comunidad digital que empodera a mujeres emprendedoras y profesionales para conectar, colaborar y crecer.</p>
-</div>        <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-[var(--primary-accent)] text-white text-base font-bold tracking-[0.015em] hover:bg-opacity-90 transition-all transform hover:scale-105" onclick="window.location.href='postulacion.html'">
-            <span class="truncate">Únete al Círculo</span>
+</div>        <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-11 px-6 bg-[#eb13b5] text-[#fcf8fb] text-base font-bold leading-normal tracking-[0.015em] shadow-md transition-transform hover:scale-105" onclick="window.location.href='postulacion.html'">
+            <span class="truncate">Únete a Nosotras</span>
 </button>
 </div>
 </div>
